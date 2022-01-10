@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>Lista Email da server</title>
+    <title>Document</title>
 </head>
 <body>
     <div id="app">
-        <ul>
+        <ul v-if="listEmail.length == 10 ">
             <li v-for="email in listEmail">
                 {{ email }}
             </li>
