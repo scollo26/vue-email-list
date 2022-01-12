@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="email in listEmail">
+            <li v-for="(email, index) in listEmail " :key= "email + index">
                 {{ email }}
             </li>
         </ul>
